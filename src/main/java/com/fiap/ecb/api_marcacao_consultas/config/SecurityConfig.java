@@ -34,7 +34,7 @@ public class SecurityConfig {
                         .requestMatchers(
                                 "/usuarios",
                                 "/usuarios/login",
-                                "/h2-console/**" // PERMITE ACESSO AO H2
+                                "/h2-console/**"
                         ).permitAll()
                         .anyRequest().authenticated()
                 )
